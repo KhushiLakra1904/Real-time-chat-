@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Real-Feel Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="avatar">
+                <img src="https://ui-avatars.com/api/?name=Alex+Doe&background=0084ff&color=fff" alt="Avatar">
+                <div class="status-dot"></div>
+            </div>
+            <div class="user-info">
+                <span class="username">Alex Doe</span>
+                <span class="status-text">Online</span>
+            </div>
+        </header>
+        
+        <div id="chat-box" class="chat-box">
+            <div id="typing-indicator" class="typing">
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <button id="emoji-btn" class="icon-btn">😊</button>
+            <label for="image-input" class="icon-btn">📎</label>
+            <input type="file" id="image-input" accept="image/*" hidden>
+            
+            <div id="emoji-picker" class="emoji-picker">
+                <span>😀</span><span>😂</span><span>😍</span><span>👍</span>
+                <span>🔥</span><span>✨</span><span>😎</span><span>🎉</span>
+            </div>
+
+            <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+            <button id="send-btn" class="send-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
